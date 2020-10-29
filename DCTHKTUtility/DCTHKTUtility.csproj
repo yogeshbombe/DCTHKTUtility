@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Atlassian.Jira, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Atlassian.SDK.2.2.0\lib\Atlassian.Jira.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.2.4\lib\net451\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
     </Reference>
@@ -126,6 +129,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JiraConnect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
